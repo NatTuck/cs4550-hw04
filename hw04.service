@@ -1,0 +1,18 @@
+[Unit]
+Description=HW04 Elixir Practice
+
+[Service]
+Type=simple
+User=practice
+Group=practice
+Restart=on-failure
+Environment=MIX_ENV=prod
+Environment=PORT=4790
+Environment=PROD=true
+Environment=LANG=en_US.UTF-8
+
+WorkingDirectory=/home/hw04/cs4550-hw04
+ExecStart=/bin/bash /home/hw04/cs4550-hw04/start.sh
+
+[Install]
+WantedBy=multi-user.target

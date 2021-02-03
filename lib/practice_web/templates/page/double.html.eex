@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Double Results</h2>
+
+    <p>x = <%= @x %></p>
+    <p>2 * x = <%= @y %></p>
+  </div>
+</div>

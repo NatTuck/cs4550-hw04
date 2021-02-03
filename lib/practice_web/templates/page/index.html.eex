@@ -1,0 +1,38 @@
+
+<div class="row">
+  <div class="column">
+    <h2>Double A Number</h2>
+
+    <%= form_for @conn, "/double", fn f -> %>
+      <p>Enter number: <%= text_input f, :x %></p>
+      <p><%= submit "Double It" %></p>
+    <% end %>
+  </div>
+  <div class="column">
+    <h2>Arithmetic Expressions</h2>
+
+    <%= form_for @conn, "/calc", fn f -> %>
+      <p>Enter expression: <%= text_input f, :expr, placeholder: "2 + 3 * 4" %></p>
+      <p><%= submit "Evaluate" %></p>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Prime Factors</h2>
+
+    <%= form_for @conn, "/factor", fn f -> %>
+      <p>Enter number: <%= text_input f, :x %></p>
+      <p><%= submit "Factor It" %></p>
+    <% end %>
+  </div>
+  <div class="column">
+    <h2>Palindrome?</h2>
+
+    <p>TODO: Add a form here that checks if a string is a palindrome.</p>
+    <p>INPUT BOX</p>
+    <p>SUBMIT BUTTON</p>
+  </div>
+</div>
+
