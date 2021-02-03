@@ -23,7 +23,7 @@ config :practice, PracticeWeb.Endpoint,
 # If you are doing OTP releases, you need to instruct Phoenix
 # to start each relevant endpoint:
 #
-#     config :practice, PracticeWeb.Endpoint, server: true
+config :practice, PracticeWeb.Endpoint, server: true
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.
